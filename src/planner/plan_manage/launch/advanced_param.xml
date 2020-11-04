@@ -7,6 +7,7 @@
   <arg name="camera_pose_topic"/>
   <arg name="depth_topic"/>
   <arg name="cloud_topic"/>
+  <arg name="bspline_topic" default="/planning/bspline"/>
 
   <arg name="cx"/>
   <arg name="cy"/>
@@ -43,6 +44,7 @@
     <remap from="/grid_map/cloud" to="$(arg cloud_topic)"/>
     <remap from = "/grid_map/pose"   to = "$(arg camera_pose_topic)"/> 
     <remap from = "/grid_map/depth" to = "$(arg depth_topic)"/>
+    <remap from = "/planning/bspline" to = "$(arg bspline_topic)"/>
 
     <!-- planning fsm -->
     <param name="fsm/flight_type" value="$(arg flight_type)" type="int"/>
