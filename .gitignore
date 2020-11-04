@@ -5,6 +5,7 @@ devel/
 files/
 README.md
 src/CMakeLists.txt
+src/drone_LfH
 benchmark_haha.zip
 rebound_planner_BB.zip
 
